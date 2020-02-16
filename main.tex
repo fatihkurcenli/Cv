@@ -1,0 +1,190 @@
+\documentclass[lighthipster]{simplehipstercv}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Fatih}{Kurçenli}{Computer Engineer}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.26}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{photo.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{Hakkımda}\\[0.5em]
+
+{\footnotesize
+\ Karadeniz Teknik Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. \ Eğitimim devam etmekte olup yeni şeyler öğrenmek için her gün çalışmaktayım}
+\bigskip
+
+\bg{cvgreen}{white}{Kişisel Bilgiler} \\[0.5em]
+Fatih Kurçenli
+
+Rize/Çayeli
+
+14.03.1998
+
+\bigskip
+
+\bg{cvgreen}{white}{Uzmanlık alanları} \\[0.5em]
+
+ ~•~ Yazılım ~•~ İngilizce
+
+\bigskip
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Amacım}\\[0.5em]
+
+\ Bilgisayar Dünyasında hızlı gelişen yazılım Dünyasında benim de bir katkımın olması
+\bigskip
+\vspace{4em}
+
+\bg{cvgreen}{white}{İlgi Alanlarım}\\[0.5em]
+
+\texttt{Java and Kotlin} ~/~ \texttt{Android}
+\texttt{Python} ~/~ \texttt{Deep Learning} ~/~ \texttt{Machine Learning} ~/    ~      
+\texttt{PHP and MySql} ~/~ \texttt{Web Programming}
+
+\vspace{7em}
+
+\infobubble{\faAt}{cvgreen}{white}{fatihkurcenli0@gmail}
+\infobubble{\faLinkedin}{cvgreen}{white}{in/fatihkurcenli}
+\infobubble{\faGithub}{cvgreen}{white}{fatihkurcenli}
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Deneyimler}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2016--2021}{Karadeniz Teknik Üniversitesi}{Üniversite}{Trabzon/Türkiye \color{cvred}}{Liseden mezun olduktan sonra eğitimim öğretimim hayatımı Karadeniz Teknik Üviversitesinde Bilgisayar Mühendisliği seçerek devam etmekteyim.}{university.png} \\
+    \cvevent{2012--2016}{Çayeli İMKB Fen Lisesi}{Lise}{ Çayeli/Türkiye \color{cvred}}{Çayelinin en güzel ve eğitimi en iyi okullarından biri olan fen lisesinden 2016 yılında mezun oldum.}{highschool.jpeg}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Kişisel Özellikler}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2020}{}{Trabzon}{ \color{cvred}}{Eğitim hayatım boyunca sürekli bilgiye aç ve sürekli kendini geliştirmek için okuyan araştıran biri olarak geliştirmeye devam ediyorum.}{}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Programlama}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{C++} &  \barrule{0.55}{0.5em}{cvgreen}\\
+     \bg{skilllabelcolour}{iconcolour}{C} & \barrule{0.45}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.40}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Java} & \barrule{0.30}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Html, Css} & \barrule{0.3}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Javascript} & \barrule{0.1}{0.5em}{cvgreen} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Etkinlikler}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2019}{Mustafa Akgül Özgür Yazılım Kış Kampı}{Eğitim}{Ordu/Türkiye \color{cvred}}{Orduda gerçekleşen 18. Mustafa Akgül Özgür yazılım kış kampına katıldım. PHP ve MySql ile web programalama eğitimi aldım. }{logo-1.png} \\
+    \cvevent{2018}{Kodla Etkinliği}{Seminer}{Trabzon/Türkiye \color{cvred}}{Alanında en iyi olan kişilerden etkili bir seminer aldım ve gerçekten bana katkıları ve ileriki yazılım dünyasında nerede rol alacağım hakkında fikir oluşturdu.}{logo.png} \\
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Sertifikalar}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    2020 & Neural Networks and Deep Learning \\
+    2019 & Php and MySql Web Programlama \\
+\end{tabular}
+\bigskip
+
+\section*{Dil}
+\begin{tabular}{l | ll}
+\textbf{Türkçe} & C2 & {\phantom{x}\footnotesize Ana Dil} \\
+\textbf{İngilizce} & B2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+\textbf{Almanca} & A2 &  \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny}
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Projeler}
+\vspace{1em}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    2019 & \emph{Matrix İşlemleri C++}. \\
+    2019 & \emph{C kodu ile Süper Lig}.
+\end{tabular}
+\bigskip
+\vspace{2em}
+\section*{İşletim Sistemi}
+\begin{tabular}{l | ll}
+\textbf{Windows} \pictofraction{\faCircle}{cvgreen}{6}{black!30}{1}{\tiny} \\
+\textbf{Linux    }\pictofraction{\faCircle}{cvgreen}{5}{black!30}{2}{\tiny} \\
+\textbf{Mac    }\pictofraction{\faCircle}{cvgreen}{5}{black!30}{2}{\tiny}
+\end{tabular}
+\end{minipage}
+
+\vspace{2em}
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Fatih Kurçenli \icon{\faGithub}{cvgreen}{} github.com/fatihkurcenli \icon{\faMapMarker}{cvgreen}{} Trabzon \icon{\faPhone}{cvgreen}{} 0536 208 34 62 \newline\icon{\faEnvelopeO}{cvgreen}{} \protect\url{fatihkurcenli@gmail.com}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
